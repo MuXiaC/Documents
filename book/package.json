@@ -1,0 +1,28 @@
+{
+  "name": "muxia",
+  "version": "1.0.0",
+  "description": "对个人技能总结记录",
+  "main": "index.js",
+  "dependencies": {
+    "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-chapter-fold": "^0.0.4",
+    "gitbook-plugin-collapsible-menu": "^1.0.3",
+    "gitbook-plugin-disqus": "^0.1.0",
+    "gitbook-plugin-tbfed-pagefooter": "^0.0.1",
+    "mathjax": "^2.7.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MXUnity/Note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MXUnity/Note/issues"
+  },
+  "homepage": "https://github.com/MXUnity/Note#readme"
+}
