@@ -4,13 +4,14 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>前言 · MX的笔记</title>
+        <title>简介 · MX的笔记</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
         
         
         
+    
     
     <link rel="stylesheet" href="gitbook/style.css">
 
@@ -26,6 +27,10 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.css">
                 
             
                 
@@ -56,6 +61,9 @@
         
     
         
+    
+
+
     
 
         
@@ -106,7 +114,7 @@
                     
                         <b>1.1.</b>
                     
-                    前言
+                    简介
             
                 </a>
             
@@ -121,7 +129,7 @@
                     
                         <b>1.2.</b>
                     
-                    基础篇
+                    理论基础
             
                 </a>
             
@@ -226,14 +234,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="basis/papers/">
+        <li class="chapter " data-level="1.2.5" data-path="basis/language/">
             
-                <a href="basis/papers/">
+                <a href="basis/language/">
             
                     
                         <b>1.2.5.</b>
                     
-                    论文
+                    计算机语言
             
                 </a>
             
@@ -246,12 +254,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="application/">
+        <li class="chapter " data-level="1.3" data-path="requirements/">
             
-                <a href="application/">
+                <a href="requirements/">
             
                     
                         <b>1.3.</b>
+                    
+                    需求解决
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="requirements/application/">
+            
+                <a href="requirements/application/">
+            
+                    
+                        <b>1.3.1.</b>
                     
                     应用篇
             
@@ -261,12 +285,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="framework/">
+        <li class="chapter " data-level="1.3.2" data-path="requirements/framework/">
             
-                <a href="framework/">
+                <a href="requirements/framework/">
             
                     
-                        <b>1.4.</b>
+                        <b>1.3.2.</b>
                     
                     架构篇
             
@@ -276,12 +300,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="tools/">
+        <li class="chapter " data-level="1.3.3" data-path="requirements/tools/">
             
-                <a href="tools/">
+                <a href="requirements/tools/">
             
                     
-                        <b>1.5.</b>
+                        <b>1.3.3.</b>
                     
                     工具篇
             
@@ -291,69 +315,17 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="development/">
-            
-                <a href="development/">
-            
-                    
-                        <b>1.6.</b>
-                    
-                    开发篇
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.6.1" data-path="development/efficiency/">
-            
-                <a href="development/efficiency/">
-            
-                    
-                        <b>1.6.1.</b>
-                    
-                    效率
-            
-                </a>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.6.1.1" data-path="development/efficiency/RESOURCE.html">
-            
-                <a href="development/efficiency/RESOURCE.html">
-            
-                    
-                        <b>1.6.1.1.</b>
-                    
-                    资源管理
-            
-                </a>
-            
-
-            
-        </li>
-    
 
             </ul>
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.7" data-path="others/">
+        <li class="chapter " data-level="1.4" data-path="others/">
             
                 <a href="others/">
             
                     
-                        <b>1.7.</b>
+                        <b>1.4.</b>
                     
                     其他
             
@@ -364,12 +336,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.7.1" data-path="others/NONSENSE.html">
+        <li class="chapter " data-level="1.4.1" data-path="others/NONSENSE.html">
             
                 <a href="others/NONSENSE.html">
             
                     
-                        <b>1.7.1.</b>
+                        <b>1.4.1.</b>
                     
                     瞎逼逼
             
@@ -414,7 +386,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >前言</a>
+        <a href="." >简介</a>
     </h1>
 </div>
 
@@ -429,63 +401,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x524D;&#x8A00;">&#x524D;&#x8A00;</h1>
-<p>&#x5BF9;&#x4E2A;&#x4EBA;&#x6280;&#x80FD;&#x603B;&#x7ED3;&#x8BB0;&#x5F55;&#xFF0C;&#x76EE;&#x6807;&#x8BB0;&#x5F55;</p>
+                                <h1 id="&#x4E2A;&#x4EBA;&#x6587;&#x6863;&#x96C6;">&#x4E2A;&#x4EBA;&#x6587;&#x6863;&#x96C6;</h1>
+<h4 id="1&#x524D;&#x8A00;">1.&#x524D;&#x8A00;</h4>
 <ul>
-<li>&#x6DF1;&#x8015;&#x6548;&#x7387;&#xFF0C;&#x8FD0;&#x884C;&#x6548;&#x7387;&#xFF0C;&#x5236;&#x4F5C;&#x6548;&#x7387;</li>
-<li>&#x6DF1;&#x5165;&#x539F;&#x7406;&#x57FA;&#x7840;&#xFF0C;&#x63A8;&#x8BBA;&#x5B9E;&#x65BD;&#x8BBA;&#x6587;</li>
-<li>&#x5B8C;&#x5584;&#x80FD;&#x529B;&#xFF0C;&#x5B9E;&#x65BD;&#x5F15;&#x64CE;&#x5236;&#x4F5C;</li>
-</ul>
-<h5 id="1&#x57FA;&#x7840;&#x7BC7;">1.<a href="basis/">&#x57FA;&#x7840;&#x7BC7;</a></h5>
-<ul>
-<li><p><a href="basis/mathematica/">&#x2460;&#x6570;&#x5B66;</a></p>
+<li><p>&#x6587;&#x6863;&#x4E3B;&#x8981;&#x8BB0;&#x5F55;&#x4E2A;&#x4EBA;&#x5B66;&#x4E60;&#x77E5;&#x8BC6;&#x70B9;&#x6574;&#x7406;&#x6574;&#x5408;&#xFF0C;&#x76EE;&#x7684;&#x5728;&#x6574;&#x7406;&#x68B3;&#x7406;&#x5B66;&#x8BC6;&#x7684;&#x79EF;&#x7D2F;</p>
 </li>
-<li><p><a href="basis/physics/">&#x2461;&#x7269;&#x7406;</a></p>
+<li><p>&#x6587;&#x6863;&#x5728;&#x5185;&#x5BB9;&#x8BB0;&#x5F55;&#x5206;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#x8FDB;&#x884C;&#xFF1A;</p>
+<div class="mermaid">
+graph LR
+A(&#x57FA;&#x4E8E;&#x7406;&#x8BBA;)--&gt;B(&#x6EE1;&#x8DB3;&#x9700;&#x6C42;)
+</div>
+<div class="mermaid">
+graph LR
+A(&#x57FA;&#x4E8E;&#x9700;&#x6C42;)--&gt;B(&#x5E38;&#x7528;&#x65B9;&#x6848;)
+B--&gt;C(&#x6D89;&#x53CA;&#x7406;&#x8BBA;)
+B--&gt;D(&#x5B9E;&#x8DF5;&#x4F18;&#x7F3A;)
+</div>
 </li>
-<li><p><a href="basis/hardware/">&#x2462;&#x786C;&#x4EF6;</a></p>
-</li>
-<li><p>&#x2463;<a href="basis/algorithm/">&#x7B97;&#x6CD5;</a></p>
-</li>
-<li><p>&#x2464;<a href="basis/papers/">&#x8BBA;&#x6587;</a></p>
-</li>
-</ul>
-<h5 id="2&#x5E94;&#x7528;&#x7BC7;">2.<a href="application/">&#x5E94;&#x7528;&#x7BC7;</a></h5>
-<ul>
-<li><p>&#x2460;&#x6548;&#x679C;&#x6A21;&#x62DF;&#x5B9E;&#x73B0;</p>
-</li>
-<li><p>&#x2461;&#x7406;&#x8BBA;&#x63A8;&#x5BFC;&#x6548;&#x679C;</p>
-</li>
-</ul>
-<h5 id="3&#x67B6;&#x6784;&#x7BC7;">3.<a href="framework/">&#x67B6;&#x6784;&#x7BC7;</a></h5>
-<ul>
-<li><p>&#x2460;&#x901A;&#x7528;</p>
-</li>
-<li><p>&#x2461;&#x89E3;&#x8026;</p>
-</li>
-<li><p>&#x2462;&#x7A33;&#x5B9A;</p>
-</li>
-<li><p>&#x2463;&#x6269;&#x5C55;</p>
+<li><p>&#x7ED3;&#x6784;&#x4F1A;&#x4F7F;&#x7528;&#x4EE5;&#x4E0B;&#x56FA;&#x683C;&#x5F0F;&#x8BB0;&#x5F55;:</p>
+<div class="mermaid">
+graph LR
+A(&quot;&#x524D;&#x8A00;(&#x504F;&#x5411;&#x9650;&#x5236;)&quot;) --&gt;B(&quot;&#x4E2A;&#x4EBA;&#x7406;&#x89E3;(&#x5BF9;&#x4E8E;&#x7406;&#x8BBA;/&#x9700;&#x6C42;&#x7684;&#x672C;&#x8D28;&#x7406;&#x89E3;)&quot;)
+B--&gt;C(&quot;&#x5176;&#x4ED6;(&#x8BB0;&#x5F55;&#x5F62;&#x5F0F;)&quot;)
+C--&gt;D(&#x603B;&#x7ED3;)
+</div>
+
 </li>
 </ul>
-<h5 id="4&#x5DE5;&#x5177;&#x7BC7;">4.<a href="tools/">&#x5DE5;&#x5177;&#x7BC7;</a></h5>
+<h4 id="2&#x6280;&#x80FD;&#x6A21;&#x5757;">2.&#x6280;&#x80FD;&#x6A21;&#x5757;</h4>
 <ul>
-<li><p>&#x2460;&#x6E32;&#x67D3;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;</p>
+<li><a href="basis/">&#x7406;&#x8BBA;&#x57FA;&#x7840;</a></li>
+<li><a href="basis/mathematica/">&#x6570;&#x5B66;&#x57FA;&#x7840;</a><ul>
+<li><a href="basis/algorithm/">&#x7B97;&#x6CD5;&#x57FA;&#x7840;</a></li>
+<li><a href="basis/hardware/">&#x786C;&#x4EF6;&#x57FA;&#x7840;</a></li>
+<li><a href="basis/language/">&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;</a></li>
+<li><a href="basis/physics/">&#x7269;&#x7406;&#x57FA;&#x7840;</a></li>
+</ul>
 </li>
-<li><p>&#x2461;&#x6027;&#x80FD;&#x6D4B;&#x8BD5;&#x5DE5;&#x5177;</p>
+<li><p>&#x9700;&#x6C42;&#x89E3;&#x51B3;</p>
+<ul>
+<li><a href="(requirements/application/README.md">&#x5E94;&#x7528;&#x7BC7;(&#x4E1A;&#x52A1;)</a>)</li>
+<li><a href="requirements/framework/">&#x67B6;&#x6784;&#x7BC7;(&#x6269;&#x5C55;&#xFF0C;&#x5065;&#x58EE;)</a></li>
+<li><a href="requirements/tools/">&#x5DE5;&#x5177;&#x7BC7;(&#x6548;&#x7387;/&#x9884;&#x5904;&#x7406;)</a></li>
+</ul>
 </li>
-<li><p>&#x2462;&#x5F00;&#x53D1;&#x5E73;&#x53F0;&#x6307;&#x4EE4;&#x811A;&#x672C;</p>
+<li>&#x6574;&#x5408;<ul>
+<li>&#x6E38;&#x620F;&#x5F15;&#x64CE;&#x6784;&#x5EFA;</li>
+</ul>
 </li>
 </ul>
-<h5 id="5&#x5F00;&#x53D1;&#x7BC7;">5.<a href="development/">&#x5F00;&#x53D1;&#x7BC7;</a></h5>
+<h4 id="3&#x7ED3;&#x8BED;">3.&#x7ED3;&#x8BED;</h4>
 <ul>
-<li><a href="development/efficiency/">&#x2460;&#x6548;&#x7387;</a></li>
-<li><a href="development/efficiency/RESOURCE.html">&#x2461;&#x8D44;&#x6E90;&#x7BA1;&#x7406;</a></li>
-<li>&#x2462;&#x62BD;&#x8C61;</li>
-<li>&#x2463;&#x5E73;&#x53F0;</li>
-<li>&#x2464;&#x52A0;&#x5BC6;</li>
+<li>&#x8BB0;&#x5F55;&#x5B66;&#x4E60;&#x77E5;&#x8BC6;&#x79EF;&#x7D2F;&#x5185;&#x5BB9;&#xFF0C;&#x6162;&#x6162;&#x8865;&#x5145;&#x5404;&#x79CD;&#x4F7F;&#x7528;&#x7684;&#x77E5;&#x8BC6;&#x8BB0;&#x5F55;</li>
+<li>&#x79EF;&#x7D2F;&#x57FA;&#x7840;&#x6570;&#x636E;&#x5206;&#x6790;&#x601D;&#x8DEF;&#xFF0C;&#x4E3A;&#x9700;&#x6C42;&#x65B9;&#x6848;&#x63D0;&#x4F9B;&#x7406;&#x8BBA;&#x5B9E;&#x73B0;&#x4F9D;&#x636E;</li>
 </ul>
 <footer class="page-footer"><span class="copyright">MuXia 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2022-07-24 16:19:35
+2022-10-24 23:43:05
 </span></footer>
                                 
                                 </section>
@@ -514,7 +485,7 @@
             
                 
                 
-                <a href="basis/" class="navigation navigation-next navigation-unique" aria-label="Next page: 基础篇">
+                <a href="basis/" class="navigation navigation-next navigation-unique" aria-label="Next page: 理论基础">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -525,12 +496,13 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前言","level":"1.1","depth":1,"next":{"title":"基础篇","level":"1.2","depth":1,"path":"basis/README.md","ref":"basis/README.md","articles":[{"title":"数学","level":"1.2.1","depth":2,"path":"basis/mathematica/README.md","ref":"basis/mathematica/README.md","articles":[{"title":"线性代数","level":"1.2.1.1","depth":3,"path":"basis/mathematica/linearalgebra/README.md","ref":"basis/mathematica/linearalgebra/README.md","articles":[]},{"title":"复变分析","level":"1.2.1.2","depth":3,"path":"basis/mathematica/complex_analysis/README.md","ref":"basis/mathematica/complex_analysis/README.md","articles":[]}]},{"title":"物理","level":"1.2.2","depth":2,"path":"basis/physics/README.md","ref":"basis/physics/README.md","articles":[]},{"title":"硬件","level":"1.2.3","depth":2,"path":"basis/hardware/README.md","ref":"basis/hardware/README.md","articles":[]},{"title":"算法","level":"1.2.4","depth":2,"path":"basis/algorithm/README.md","ref":"basis/algorithm/README.md","articles":[]},{"title":"论文","level":"1.2.5","depth":2,"path":"basis/papers/README.md","ref":"basis/papers/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["collapsible-menu","chapter-fold","tbfed-pagefooter","katex","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"MuXia 2020","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"collapsible-menu":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MX的笔记","gitbook":"*"},"file":{"path":"README.md","mtime":"2022-07-24T08:19:35.478Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-16T16:20:32.342Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"简介","level":"1.1","depth":1,"next":{"title":"理论基础","level":"1.2","depth":1,"path":"basis/README.md","ref":"basis/README.md","articles":[{"title":"数学","level":"1.2.1","depth":2,"path":"basis/mathematica/README.md","ref":"basis/mathematica/README.md","articles":[{"title":"线性代数","level":"1.2.1.1","depth":3,"path":"basis/mathematica/linearalgebra/README.md","ref":"basis/mathematica/linearalgebra/README.md","articles":[]},{"title":"复变分析","level":"1.2.1.2","depth":3,"path":"basis/mathematica/complex_analysis/README.md","ref":"basis/mathematica/complex_analysis/README.md","articles":[]}]},{"title":"物理","level":"1.2.2","depth":2,"path":"basis/physics/README.md","ref":"basis/physics/README.md","articles":[]},{"title":"硬件","level":"1.2.3","depth":2,"path":"basis/hardware/README.md","ref":"basis/hardware/README.md","articles":[]},{"title":"算法","level":"1.2.4","depth":2,"path":"basis/algorithm/README.md","ref":"basis/algorithm/README.md","articles":[]},{"title":"计算机语言","level":"1.2.5","depth":2,"path":"basis/language/README.md","ref":"basis/language/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["collapsible-menu","chapter-fold","tbfed-pagefooter","katex","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"MuXia 2020","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"collapsible-menu":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MX的笔记","gitbook":"*"},"file":{"path":"README.md","mtime":"2022-10-24T15:43:05.634Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-24T16:31:43.469Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
 
         
+    
     <script src="gitbook/gitbook.js"></script>
     <script src="gitbook/theme.js"></script>
     
@@ -540,6 +512,10 @@
     
         
         <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-mermaid-gb3/book/plugin.js"></script>
         
     
         
@@ -570,6 +546,8 @@
         <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
         
     
+
+    <script src="gitbook/gitbook-plugin-mermaid-gb3/mermaid/mermaid.min.js"></script>
 
     </body>
 </html>
