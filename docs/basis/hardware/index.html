@@ -346,9 +346,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1.1.1" data-path="../../requirements/application/rendering/RENDERPIPELINE.html">
+        <li class="chapter " data-level="1.3.1.1.1" data-path="../../requirements/application/rendering/pipeline/">
             
-                <a href="../../requirements/application/rendering/RENDERPIPELINE.html">
+                <a href="../../requirements/application/rendering/pipeline/">
             
                     
                         <b>1.3.1.1.1.</b>
@@ -359,11 +359,47 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1.1" data-path="../../requirements/application/rendering/pipeline/DEFERREDRENDERING.html">
+            
+                <a href="../../requirements/application/rendering/pipeline/DEFERREDRENDERING.html">
+            
+                    
+                        <b>1.3.1.1.1.1.</b>
+                    
+                    延迟渲染
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="1.3.1.1.2" data-path="../../requirements/application/rendering/REALTIMERENDERING.html">
+        <li class="chapter " data-level="1.3.1.1.1.2" data-path="../../requirements/application/rendering/pipeline/FORWARDRENDERING.html">
             
-                <a href="../../requirements/application/rendering/REALTIMERENDERING.html">
+                <a href="../../requirements/application/rendering/pipeline/FORWARDRENDERING.html">
+            
+                    
+                        <b>1.3.1.1.1.2.</b>
+                    
+                    前向渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="../../requirements/application/rendering/realtimerendering/">
+            
+                <a href="../../requirements/application/rendering/realtimerendering/">
             
                     
                         <b>1.3.1.1.2.</b>
@@ -374,11 +410,62 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.2.1" data-path="../../requirements/application/rendering/realtimerendering/REALTIMESHADOW.html">
+            
+                <a href="../../requirements/application/rendering/realtimerendering/REALTIMESHADOW.html">
+            
+                    
+                        <b>1.3.1.1.2.1.</b>
+                    
+                    实时阴影
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="1.3.1.1.3" data-path="../../requirements/application/rendering/OFFLINERENDERING.html">
+        <li class="chapter " data-level="1.3.1.1.2.2" data-path="../../requirements/application/rendering/realtimerendering/PBRRENDER.html">
             
-                <a href="../../requirements/application/rendering/OFFLINERENDERING.html">
+                <a href="../../requirements/application/rendering/realtimerendering/PBRRENDER.html">
+            
+                    
+                        <b>1.3.1.1.2.2.</b>
+                    
+                    PRB材质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.3" data-path="../../requirements/application/rendering/realtimerendering/postprocess/README.md">
+            
+                <span>
+            
+                    
+                        <b>1.3.1.1.2.3.</b>
+                    
+                    后处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.3" data-path="../../requirements/application/rendering/offlinerendering/">
+            
+                <a href="../../requirements/application/rendering/offlinerendering/">
             
                     
                         <b>1.3.1.1.3.</b>
@@ -388,6 +475,27 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.3.1" data-path="../../requirements/application/rendering/offlinerendering/BAKE.html">
+            
+                <a href="../../requirements/application/rendering/offlinerendering/BAKE.html">
+            
+                    
+                        <b>1.3.1.1.3.1.</b>
+                    
+                    离线烘焙
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -483,7 +591,7 @@
                     
                         <b>1.3.2.</b>
                     
-                    架构篇
+                    架构与框架篇
             
                 </a>
             
@@ -698,7 +806,8 @@
 </ul>
 <h4 id="3&#x4E2A;&#x4EBA;&#x7406;&#x89E3;">3.&#x4E2A;&#x4EBA;&#x7406;&#x89E3;</h4>
 <ul>
-<li>Gpu&#x67B6;&#x6784;&#x7684;&#x5DEE;&#x5F02;&#x7406;&#x89E3;<ul>
+<li><p>Gpu&#x67B6;&#x6784;&#x7684;&#x5DEE;&#x5F02;&#x7406;&#x89E3;</p>
+<ul>
 <li>TBR/TBDR&#x5DE5;&#x5E8F;&#x6BD4;IMR&#x70E6;&#x7410;&#xFF0C;&#x5BF9;&#x5185;&#x5BB9;&#x5199;&#x5165;&#x66F4;&#x589E;&#x52A0;&#x4E86;&#x9876;&#x70B9;&#x6570;&#x636E;&#x8FD9;&#x4E00;&#x5757;&#xFF0C;&#x672C;&#x8EAB;&#x5C5E;&#x4E8E;&#x4E00;&#x4E2A;&#x65E0;&#x5948;&#x4E4B;&#x4E3E;&#xFF0C;On-Chip Memory&#x4F5C;&#x4E3A;&#x4E00;&#x4E2A;SOC&#x4E0A;&#x82AF;&#x7247;&#x7684;&#x5185;&#x5B58;&#x5B58;&#x50A8;&#x5757;&#xFF0C;&#x7531;&#x4E8E;&#x786C;&#x4EF6;&#x7684;&#x4F53;&#x79EF;&#x5DE5;&#x827A;&#x95EE;&#x9898;&#xFF0C;&#x672C;&#x8EAB;&#x5B58;&#x50A8;&#x7684;&#x91CF;&#x5F88;&#x6709;&#x9650;&#xFF0C;&#x901A;&#x8FC7;Gpu&#x5185;&#x7F6E;&#x5185;&#x5B58;&#x5757;&#x80FD;&#x6709;&#x6548;&#x52A0;&#x5FEB;Gpu&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x540C;&#x65F6;&#x901A;&#x8FC7;&#x7247;&#x5185;&#x8BBF;&#x95EE;&#x51CF;&#x5C11;&#x603B;&#x7EBF;&#x8BBF;&#x95EE;&#xFF0C;&#x51CF;&#x5C11;&#x5E26;&#x5BBD;&#x4ECE;&#x800C;&#x51CF;&#x4F4E;&#x80FD;&#x8017;&#xFF0C;&#x4F46;&#x5728;SOC&#x82AF;&#x7247;&#x4E0A;&#x5B8C;&#x6210;&#x6CA1;&#x6CD5;&#x63D0;&#x4F9B;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x4E2A;&#x5B58;&#x50A8;&#x6761;&#x4EF6;&#xFF0C;&#x56E0;&#x6B64;&#x53EA;&#x80FD;&#x5C06;&#x8F93;&#x51FA;&#x5207;&#x5757;&#xFF0C;&#x8BA9;On-Chip Memory&#x80FD;&#x6EE1;&#x8DB3;&#x5B8C;&#x6210;&#x6E32;&#x67D3;&#x7684;&#x90E8;&#x5206;&#x5B58;&#x50A8;&#x6761;&#x4EF6;&#x3002;</li>
 <li>&#x901A;&#x8FC7;TBR/TBDR&#x7684;&#x67B6;&#x6784;&#x7406;&#x89E3;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x80FD;&#x660E;&#x767D;MSAA&#x65B9;&#x6848;&#xFF0C;&#x5EF6;&#x8FDF;&#x6E32;&#x67D3;&#x65B9;&#x6848;&#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x5F71;&#x54CD;&#x79FB;&#x52A8;&#x7AEF;&#x6E32;&#x67D3;&#x6027;&#x80FD;&#xFF0C;&#x65E0;&#x8BBA;MSAA&#x65B9;&#x6848;&#xFF0C;&#x8FD8;&#x662F;&#x5EF6;&#x8FDF;&#x6E32;&#x67D3;&#x65B9;&#x6848;&#x90FD;&#x9700;&#x8981;&#x5927;&#x91CF;&#x7684;&#x663E;&#x5B58;&#x652F;&#x6301;&#xFF0C;&#x4F7F;&#x7528;&#x8FD9;&#x4E9B;&#x65B9;&#x6848;&#x5C31;&#x610F;&#x5473;&#x7740;On-Chip Memory&#x5355;&#x4F4D;&#x5904;&#x7406;&#x7684;&#x50CF;&#x7D20;&#x9762;&#x79EF;&#x7F29;&#x5C0F;&#xFF0C;&#x540C;&#x65F6;&#x9700;&#x8981;&#x5904;&#x7406;&#x7684;&#x5207;&#x7247;&#x6B21;&#x6570;&#x5C31;&#x8981;&#x589E;&#x52A0;</li>
 <li>&#x540C;&#x65F6;&#x5728;Gpu&#x5382;&#x5BB6;&#x4F1A;&#x5F00;&#x53D1;&#x51FA;&#x5404;&#x79CD;&#x4E0D;&#x540C;&#x7684;&#x6280;&#x672F;&#x65B9;&#x6848;&#x53BB;&#x4F18;&#x5316;&#x79FB;&#x52A8;&#x7AEF;&#x6027;&#x80FD;&#xFF0C;&#x4F8B;&#x5982;<ul>
@@ -709,9 +818,17 @@
 </li>
 </ul>
 </li>
+<li><p>Gpu&#x67B6;&#x6784;&#x5B9E;&#x9645;&#x56FE;&#x793A;&#x4F8B;</p>
+<ul>
+<li>IMR(Immediate Mode Rendering) 
+<img src="../../resources/IMRGpuFramework_Diagram.png" alt="IMRGpuFramework"></li>
+<li>TBR/TBDR(Tile-based Deferred Rendering)
+<img src="../../resources/TBRTBDRGpuFramework_Diagram.png" alt="TBRTBDRGpuFramework"></li>
+</ul>
+</li>
 </ul>
 <footer class="page-footer"><span class="copyright">MuXia 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2022-10-25 00:31:28
+2022-10-30 17:11:24
 </span></footer>
                                 
                                 </section>
@@ -755,7 +872,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"硬件","level":"1.2.3","depth":2,"next":{"title":"算法","level":"1.2.4","depth":2,"path":"basis/algorithm/README.md","ref":"basis/algorithm/README.md","articles":[]},"previous":{"title":"物理","level":"1.2.2","depth":2,"path":"basis/physics/README.md","ref":"basis/physics/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-menu","chapter-fold","tbfed-pagefooter","katex","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"MuXia 2020","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"collapsible-menu":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MX的笔记","gitbook":"*"},"file":{"path":"basis/hardware/README.md","mtime":"2022-10-24T16:31:28.049Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-25T16:08:29.856Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"硬件","level":"1.2.3","depth":2,"next":{"title":"算法","level":"1.2.4","depth":2,"path":"basis/algorithm/README.md","ref":"basis/algorithm/README.md","articles":[]},"previous":{"title":"物理","level":"1.2.2","depth":2,"path":"basis/physics/README.md","ref":"basis/physics/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["collapsible-menu","chapter-fold","tbfed-pagefooter","katex","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"MuXia 2020","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"collapsible-menu":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MX的笔记","gitbook":"*"},"file":{"path":"basis/hardware/README.md","mtime":"2022-10-30T09:11:24.431Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-06T07:37:05.648Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

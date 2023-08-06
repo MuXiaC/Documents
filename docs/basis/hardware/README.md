@@ -24,3 +24,9 @@
     - 还有像PowerVR的TBDR方案，其中这个D值HSR技术，个人理解其实是等待片元结果通过覆盖片源数据，然后进入片源着色阶段，从而优化Overdraw的策略，该策略因为会使用等待覆盖方式，当开启alpha test，HSR就需要失效，要先进入片元着色计算结果才能或者正确的渲染结果
     - 同时苹果渲染有提供延迟渲染一次批次完成渲染结果的方案，按Unity的支持和功能思考来说，其实是On-Chip Memory做出了一次性给延迟渲染存储数据，在一次渲染流程中在On-Chip Memory做了多次渲染，该方案虽然能把延迟渲染通过一次渲染完成，但是占用了更多显存数据，所以On-Chip Memory单次处理的面积会下降，从而延长总处理时间，所以对于延迟渲染优化还是需要往数据压缩方向优化
 
+- Gpu架构实际图示例
+  - IMR(Immediate Mode Rendering) 
+    ![IMRGpuFramework](../../resources/IMRGpuFramework_Diagram.png)
+  - TBR/TBDR(Tile-based Deferred Rendering)
+    ![TBRTBDRGpuFramework](../../resources/TBRTBDRGpuFramework_Diagram.png)
+

@@ -77,7 +77,7 @@
     <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="RENDERPIPELINE.html" />
+    <link rel="next" href="pipeline/" />
     
     
     <link rel="prev" href="../" />
@@ -346,9 +346,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1.1.1" data-path="RENDERPIPELINE.html">
+        <li class="chapter " data-level="1.3.1.1.1" data-path="pipeline/">
             
-                <a href="RENDERPIPELINE.html">
+                <a href="pipeline/">
             
                     
                         <b>1.3.1.1.1.</b>
@@ -359,11 +359,47 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.1.1" data-path="pipeline/DEFERREDRENDERING.html">
+            
+                <a href="pipeline/DEFERREDRENDERING.html">
+            
+                    
+                        <b>1.3.1.1.1.1.</b>
+                    
+                    延迟渲染
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="1.3.1.1.2" data-path="REALTIMERENDERING.html">
+        <li class="chapter " data-level="1.3.1.1.1.2" data-path="pipeline/FORWARDRENDERING.html">
             
-                <a href="REALTIMERENDERING.html">
+                <a href="pipeline/FORWARDRENDERING.html">
+            
+                    
+                        <b>1.3.1.1.1.2.</b>
+                    
+                    前向渲染
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2" data-path="realtimerendering/">
+            
+                <a href="realtimerendering/">
             
                     
                         <b>1.3.1.1.2.</b>
@@ -374,11 +410,62 @@
             
 
             
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.2.1" data-path="realtimerendering/REALTIMESHADOW.html">
+            
+                <a href="realtimerendering/REALTIMESHADOW.html">
+            
+                    
+                        <b>1.3.1.1.2.1.</b>
+                    
+                    实时阴影
+            
+                </a>
+            
+
+            
         </li>
     
-        <li class="chapter " data-level="1.3.1.1.3" data-path="OFFLINERENDERING.html">
+        <li class="chapter " data-level="1.3.1.1.2.2" data-path="realtimerendering/PBRRENDER.html">
             
-                <a href="OFFLINERENDERING.html">
+                <a href="realtimerendering/PBRRENDER.html">
+            
+                    
+                        <b>1.3.1.1.2.2.</b>
+                    
+                    PRB材质
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.2.3" data-path="realtimerendering/postprocess/README.md">
+            
+                <span>
+            
+                    
+                        <b>1.3.1.1.2.3.</b>
+                    
+                    后处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.1.3" data-path="offlinerendering/">
+            
+                <a href="offlinerendering/">
             
                     
                         <b>1.3.1.1.3.</b>
@@ -388,6 +475,27 @@
                 </a>
             
 
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1.3.1" data-path="offlinerendering/BAKE.html">
+            
+                <a href="offlinerendering/BAKE.html">
+            
+                    
+                        <b>1.3.1.1.3.1.</b>
+                    
+                    离线烘焙
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -483,7 +591,7 @@
                     
                         <b>1.3.2.</b>
                     
-                    架构篇
+                    架构与框架篇
             
                 </a>
             
@@ -680,8 +788,45 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="&#x6E32;&#x67D3;&#x6548;&#x679C;">&#x6E32;&#x67D3;&#x6548;&#x679C;</h1>
+<h4 id="1&#x524D;&#x8A00;">1.&#x524D;&#x8A00;</h4>
+<ul>
+<li>&#x6E32;&#x67D3;&#x6548;&#x679C;&#x672C;&#x8EAB;&#x53EF;&#x4EE5;&#x8BF4;&#x662F;&#x7EFC;&#x5408;&#x4E86;&#x7269;&#x7406;&#xFF0C;&#x6444;&#x5F71;&#xFF0C;&#x5FC3;&#x7406;&#xFF0C;&#x7EDF;&#x8BA1;&#xFF0C;&#x8FD1;&#x4F3C;&#x5404;&#x65B9;&#x9762;&#x5B66;&#x672F;&#x7684;&#x6210;&#x679C;</li>
+<li>&#x5728;&#x7814;&#x7A76;&#x6E32;&#x67D3;&#x6548;&#x679C;&#x65F6;&#x53EF;&#x4EE5;&#x8865;&#x5168;&#x7269;&#x7406;&#x73B0;&#x8C61;&#x4E3A;&#x57FA;&#x7840;&#xFF0C;&#x7136;&#x540E;&#x4EBA;&#x4E3A;&#x589E;&#x5F3A;&#x89C6;&#x89C9;&#x6548;&#x679C;</li>
+<li>&#x6E38;&#x620F;&#x4E2D;&#x7684;&#x6E32;&#x67D3;&#x6548;&#x679C;&#x7531;&#x4E8E;&#x65F6;&#x8017;&#x80FD;&#x8017;&#x7684;&#x8981;&#x6C42;&#xFF0C;&#x5F80;&#x5F80;&#x9700;&#x8981;&#x9009;&#x62E9;&#x5404;&#x79CD;&#x8FD1;&#x4F3C;&#x65B9;&#x6848;&#x5BF9;&#x5404;&#x79CD;&#x6027;&#x80FD;&#x4E0E;&#x6548;&#x679C;&#x95F4;&#x7684;&#x5E73;&#x8861;</li>
+</ul>
+<h4 id="2&#x6E32;&#x67D3;&#x6548;&#x679C;&#x5B9E;&#x73B0;">2.&#x6E32;&#x67D3;&#x6548;&#x679C;&#x5B9E;&#x73B0;</h4>
+<ul>
+<li><p><a href="pipeline/">&#x6E32;&#x67D3;&#x7BA1;&#x7EBF;</a> </p>
+</li>
+<li><p><a href="pipeline/">&#x591A;&#x5149;&#x6E90;&#x5B9E;&#x73B0;</a> </p>
+</li>
+</ul>
+<ul>
+<li><p><a href="realtimerendering/PBRRENDER.html">&#x540E;&#x5904;&#x7406;&#x5B9E;&#x73B0;</a> </p>
+<ul>
+<li><p><a href="">ToneMapping&#x4E0E;HDR</a></p>
+</li>
+<li><p><a href="">&#x6CDB;&#x5149;</a></p>
+</li>
+<li><a href="">Lut</a></li>
+<li><a href="">&#x666F;&#x6DF1;</a></li>
+<li><a href="">&#x6697;&#x89D2;</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p><a href="realtimerendering/PBRRENDER.html">&#x5149;&#x7167;&#x6A21;&#x578B;</a> </p>
+<ul>
+<li><a href="">PBR&#x5149;&#x7167;&#x6A21;&#x578B;</a></li>
+<li><a href="">&#x4F20;&#x7EDF;&#x5149;&#x7167;&#x6A21;&#x578B;</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="realtimerendering/REALTIMESHADOW.html">&#x9634;&#x5F71;&#x5B9E;&#x73B0;</a> </li>
+</ul>
 <footer class="page-footer"><span class="copyright">MuXia 2020 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2022-10-26 00:00:52
+2022-10-30 16:57:43
 </span></footer>
                                 
                                 </section>
@@ -714,7 +859,7 @@
                 </a>
                 
                 
-                <a href="RENDERPIPELINE.html" class="navigation navigation-next " aria-label="Next page: 渲染管线">
+                <a href="pipeline/" class="navigation navigation-next " aria-label="Next page: 渲染管线">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -725,7 +870,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"渲染效果","level":"1.3.1.1","depth":3,"next":{"title":"渲染管线","level":"1.3.1.1.1","depth":4,"path":"requirements/application/rendering/RENDERPIPELINE.md","ref":"requirements/application/rendering/RENDERPIPELINE.md","articles":[]},"previous":{"title":"应用篇","level":"1.3.1","depth":2,"path":"requirements/application/README.md","ref":"requirements/application/README.md","articles":[{"title":"渲染效果","level":"1.3.1.1","depth":3,"path":"requirements/application/rendering/README.md","ref":"requirements/application/rendering/README.md","articles":[{"title":"渲染管线","level":"1.3.1.1.1","depth":4,"path":"requirements/application/rendering/RENDERPIPELINE.md","ref":"requirements/application/rendering/RENDERPIPELINE.md","articles":[]},{"title":"实时渲染","level":"1.3.1.1.2","depth":4,"path":"requirements/application/rendering/REALTIMERENDERING.md","ref":"requirements/application/rendering/REALTIMERENDERING.md","articles":[]},{"title":"离线渲染","level":"1.3.1.1.3","depth":4,"path":"requirements/application/rendering/OFFLINERENDERING.md","ref":"requirements/application/rendering/OFFLINERENDERING.md","articles":[]}]},{"title":"资源管理","level":"1.3.1.2","depth":3,"path":"requirements/application/resources/README.md","ref":"requirements/application/resources/README.md","articles":[]},{"title":"网络通信","level":"1.3.1.3","depth":3,"path":"requirements/application/network/README.md","ref":"requirements/application/network/README.md","articles":[]},{"title":"动画系统","level":"1.3.1.4","depth":3,"path":"requirements/application/animation/README.md","ref":"requirements/application/animation/README.md","articles":[]},{"title":"粒子系统","level":"1.3.1.5","depth":3,"path":"requirements/application/particle/README.md","ref":"requirements/application/particle/README.md","articles":[]},{"title":"数据加密","level":"1.3.1.6","depth":3,"path":"requirements/application/encrypt/README.md","ref":"requirements/application/encrypt/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["collapsible-menu","chapter-fold","tbfed-pagefooter","katex","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"MuXia 2020","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"collapsible-menu":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MX的笔记","gitbook":"*"},"file":{"path":"requirements/application/rendering/README.md","mtime":"2022-10-25T16:00:52.897Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-25T16:08:29.856Z"},"basePath":"../../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"渲染效果","level":"1.3.1.1","depth":3,"next":{"title":"渲染管线","level":"1.3.1.1.1","depth":4,"path":"requirements/application/rendering/pipeline/README.md","ref":"requirements/application/rendering/pipeline/README.md","articles":[{"title":"延迟渲染","level":"1.3.1.1.1.1","depth":5,"path":"requirements/application/rendering/pipeline/DEFERREDRENDERING.md","ref":"requirements/application/rendering/pipeline/DEFERREDRENDERING.md","articles":[]},{"title":"前向渲染","level":"1.3.1.1.1.2","depth":5,"path":"requirements/application/rendering/pipeline/FORWARDRENDERING.md","ref":"requirements/application/rendering/pipeline/FORWARDRENDERING.md","articles":[]}]},"previous":{"title":"应用篇","level":"1.3.1","depth":2,"path":"requirements/application/README.md","ref":"requirements/application/README.md","articles":[{"title":"渲染效果","level":"1.3.1.1","depth":3,"path":"requirements/application/rendering/README.md","ref":"requirements/application/rendering/README.md","articles":[{"title":"渲染管线","level":"1.3.1.1.1","depth":4,"path":"requirements/application/rendering/pipeline/README.md","ref":"requirements/application/rendering/pipeline/README.md","articles":[{"title":"延迟渲染","level":"1.3.1.1.1.1","depth":5,"path":"requirements/application/rendering/pipeline/DEFERREDRENDERING.md","ref":"requirements/application/rendering/pipeline/DEFERREDRENDERING.md","articles":[]},{"title":"前向渲染","level":"1.3.1.1.1.2","depth":5,"path":"requirements/application/rendering/pipeline/FORWARDRENDERING.md","ref":"requirements/application/rendering/pipeline/FORWARDRENDERING.md","articles":[]}]},{"title":"实时渲染","level":"1.3.1.1.2","depth":4,"path":"requirements/application/rendering/realtimerendering/README.md","ref":"requirements/application/rendering/realtimerendering/README.md","articles":[{"title":"实时阴影","level":"1.3.1.1.2.1","depth":5,"path":"requirements/application/rendering/realtimerendering/REALTIMESHADOW.md","ref":"requirements/application/rendering/realtimerendering/REALTIMESHADOW.md","articles":[]},{"title":"PRB材质","level":"1.3.1.1.2.2","depth":5,"path":"requirements/application/rendering/realtimerendering/PBRRENDER.md","ref":"requirements/application/rendering/realtimerendering/PBRRENDER.md","articles":[]},{"title":"后处理","level":"1.3.1.1.2.3","depth":5,"path":"requirements/application/rendering/realtimerendering/postprocess/README.md","ref":"requirements/application/rendering/realtimerendering/postprocess/README.md","articles":[]}]},{"title":"离线渲染","level":"1.3.1.1.3","depth":4,"path":"requirements/application/rendering/offlinerendering/README.md","ref":"requirements/application/rendering/offlinerendering/README.md","articles":[{"title":"离线烘焙","level":"1.3.1.1.3.1","depth":5,"path":"requirements/application/rendering/offlinerendering/BAKE.md","ref":"requirements/application/rendering/offlinerendering/BAKE.md","articles":[]}]}]},{"title":"资源管理","level":"1.3.1.2","depth":3,"path":"requirements/application/resources/README.md","ref":"requirements/application/resources/README.md","articles":[]},{"title":"网络通信","level":"1.3.1.3","depth":3,"path":"requirements/application/network/README.md","ref":"requirements/application/network/README.md","articles":[]},{"title":"动画系统","level":"1.3.1.4","depth":3,"path":"requirements/application/animation/README.md","ref":"requirements/application/animation/README.md","articles":[]},{"title":"粒子系统","level":"1.3.1.5","depth":3,"path":"requirements/application/particle/README.md","ref":"requirements/application/particle/README.md","articles":[]},{"title":"数据加密","level":"1.3.1.6","depth":3,"path":"requirements/application/encrypt/README.md","ref":"requirements/application/encrypt/README.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["collapsible-menu","chapter-fold","tbfed-pagefooter","katex","mermaid-gb3","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"MuXia 2020","modify_label":"文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"collapsible-menu":{},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"mermaid-gb3":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":true}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"MX的笔记","gitbook":"*"},"file":{"path":"requirements/application/rendering/README.md","mtime":"2022-10-30T08:57:43.994Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-08-06T07:37:05.648Z"},"basePath":"../../..","book":{"language":""}});
         });
     </script>
 </div>
